@@ -6,10 +6,10 @@ with col1:
     st.image("images/picture.jpg")
 with col2:
     st.title("Tuntufye Mwakalasya")
-    content = """I am a freshman 
-at FIU pursuing a BS in Computer Science. 
-I enjoy problem-solving and am also very intuitive I am always open to learning new things and 
-I enjoy exploring a variety of topics that interest Me such as Math, AI, Technology, and quantitative finance."""
+    content = """Greetings! I'm currently a freshman at FIU pursuing a Bachelor of Science in Computer Science, 
+    with a passion for problem-solving and an intuitive mindset. 
+    I'm always open to new learning opportunities and enjoy exploring a diverse range of topics, 
+    such as Math, AI, Technology, and quantitative finance."""
     st.info(content)
 st.info("Below you can find some of the python projects. Feel free to contact me")
 col4,empty_col,col5 = st.columns([1.5,0.5,1.5])
