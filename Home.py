@@ -16,6 +16,7 @@ col4,empty_col,col5 = st.columns([1.5,0.5,1.5])
 df = pandas.read_csv("venv/data.csv",sep=";")
 with col4:
     for index,row in df.iterrows():
+        # Iterate through each row in the Dataframe
         st.header(row["title"])
         st.write(row['description'])
         st.image("images/" + row["image"])

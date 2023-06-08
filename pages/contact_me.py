@@ -19,3 +19,4 @@ Topic:{topic}
         send_email(message)
         st.info("Your email was sent successfully:")
 
+
