@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas
+
 st.set_page_config(layout="wide")
-col1,col2= st.columns(2)
+col1, col2 = st.columns(2)
 with col1:
     st.image("images/profilepicture.png")
 with col2:
@@ -12,10 +13,10 @@ with col2:
     such as Math,Computer Science, AI, Technology, and quantitative finance."""
     st.info(content)
 st.info("Below you can find some of the python projects I have worked on. Feel free to contact me:)")
-col4,empty_col,col5 = st.columns([1.5,0.5,1.5])
-df = pandas.read_csv("venv/data.csv",sep=";")
+col4, empty_col, col5 = st.columns([1.5, 0.5, 1.5])
+df = pandas.read_csv("venv/data.csv", sep=";")
 with col4:
-    for index,row in df.iterrows():
+    for index, row in df[1:9].iterrows():
         # Iterate through each row in the Dataframe
         st.header(row["title"])
         st.write(row['description'])
@@ -23,12 +24,8 @@ with col4:
         st.write(f"[Source code]({row['url']})")
 
 with col5:
-    for index,row in df[10:].iterrows():
+    for index, row in df[10:20].iterrows():
         st.header(row["title"])
         st.write(row['description'])
         st.image("images/" + row["image"])
         st.write(f"[Source code]({row['url']})")
-
-
-
-
