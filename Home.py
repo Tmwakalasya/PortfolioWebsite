@@ -3,15 +3,15 @@ import pandas
 st.set_page_config(layout="wide")
 col1,col2= st.columns(2)
 with col1:
-    st.image("images/picture.jpg")
+    st.image("images/profilepicture.png")
 with col2:
     st.title("Tuntufye Mwakalasya")
     content = """Greetings! I'm currently a freshman at FIU pursuing a Bachelor of Science in Computer Science, 
     with a passion for problem-solving and an intuitive mindset. 
     I'm always open to new learning opportunities and enjoy exploring a diverse range of topics, 
-    such as Math, AI, Technology, and quantitative finance."""
+    such as Math,Computer Science, AI, Technology, and quantitative finance."""
     st.info(content)
-st.info("Below you can find some of the python projects. Feel free to contact me")
+st.info("Below you can find some of the python projects I have worked on. Feel free to contact me:)")
 col4,empty_col,col5 = st.columns([1.5,0.5,1.5])
 df = pandas.read_csv("venv/data.csv",sep=";")
 with col4:
