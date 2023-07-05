@@ -2,7 +2,7 @@ import streamlit as st
 import pandas
 
 st.set_page_config(layout="wide")
-col1, col2 = st.columns(2)
+col1,col2 = st.columns(2)
 with col1:
     st.image("images/21.png")
 with col2:
@@ -16,7 +16,7 @@ st.info("Below you can find some of the python projects I have worked on. Feel f
 col4, empty_col, col5 = st.columns([1.5, 0.5, 1.5])
 df = pandas.read_csv("venv/data.csv", sep=";")
 with col4:
-    for index, row in df.iterrows():
+    for index, row in df[:10].iterrows():
         # Iterate through each row in the Dataframe
         st.header(row["title"])
         st.write(row['description'])
