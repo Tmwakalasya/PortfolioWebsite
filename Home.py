@@ -4,10 +4,10 @@ import pandas
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
 with col1:
-    st.image("images/profilepicture.png")
+    st.image("images/21.png")
 with col2:
     st.title("Tuntufye Mwakalasya")
-    content = """Greetings! I'm currently a freshman at FIU pursuing a Bachelor of Science in Computer Science, 
+    content = """Greetings! I'm Tuntufye Mwakalasya, currently a freshman at FIU pursuing a Bachelor of Science in Computer Science, 
     with a passion for problem-solving and an intuitive mindset. 
     I'm always open to new learning opportunities and enjoy exploring a diverse range of topics, 
     such as Math,Computer Science, AI, Technology, and quantitative finance."""
