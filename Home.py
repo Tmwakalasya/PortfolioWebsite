@@ -3,8 +3,6 @@ import pandas
 import os
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
-with col1:
-    st.image("website_photos/21.png")
 with col2:
     st.title("Tuntufye Mwakalasya")
     content = """Greetings! I'm Tuntufye Mwakalasya, currently a freshman at FIU pursuing a Bachelor of Science in Computer Science,
